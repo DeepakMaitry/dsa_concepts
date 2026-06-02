@@ -23,9 +23,28 @@ int main() {
 
     /************************************** */
 
+    /*
     vector<int> marks(5,-1); // size 5 all element value -1
-
+    
     cout << *(marks.begin()) << endl;
+    */
+
+    vector<int> first;
+
+    first.push_back(3);
+    first.push_back(2);
+    first.push_back(7);
+    first.push_back(4);
+    first.push_back(9);
+    first.push_back(1);
+
+    // creating an iterator 
+    vector<int>::iterator it = first.begin();
+
+    while(it != first.end()) {
+        cout << *it << " ";
+        it++;
+    }
 
     return 0;
 }

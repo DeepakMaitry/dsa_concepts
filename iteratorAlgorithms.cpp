@@ -68,6 +68,7 @@ int main() {
     // cout << *it << endl;
 
     // for_each(arr.begin(), arr.end(), printDouble);
+    
 
     // int target = 40;
     // auto it = find(arr.begin(), arr.end(), target);

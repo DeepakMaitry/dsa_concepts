@@ -109,6 +109,13 @@ using namespace std;
 int main() {
 
     unordered_map<string, string> table;
+    table["in"] = "India";
+
+    cout << table.at("in") << endl;
+    table.at("in") = "India2";
+    table["in"] = "India3";
+    cout << table.at("in") << endl;
+
     /*// creation
 
     // insertion

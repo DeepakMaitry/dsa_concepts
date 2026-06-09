@@ -116,6 +116,13 @@ int main() {
     table["in"] = "India3";
     cout << table.at("in") << endl;
 
+    unordered_map<string, string>::iterator it = table.begin();
+    while(it != table.end()) {
+        pair<string, string> p = *it;
+        cout << p.first << " " << p.second << endl;
+        it++;
+    }
+
     /*// creation
 
     // insertion
@@ -148,18 +155,18 @@ int main() {
     cout << table["in"] << endl;
 */
 
-    unordered_map<string,string>::iterator it = table.begin();
+    // unordered_map<string,string>::iterator it = table.begin();
 
     // while(it!= table.end()) {
     //     cout << *it << endl;
     //     it++;
     // }
 
-    while(it != table.end()) {
-        pair<string, string> p = *it;
-        cout << p.first << " " << p.second << endl;
-        it++;
-    }
+    // while(it != table.end()) {
+    //     pair<string, string> p = *it;
+    //     cout << p.first << " " << p.second << endl;
+    //     it++;
+    // }
 
 
 

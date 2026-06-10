@@ -109,7 +109,8 @@ using namespace std;
 int main() {
 
     unordered_map<string, string> table;
-    table["in"] = "India";
+    // table["in"] = "India";
+    table.insert(make_pair("in", "India"));
 
     cout << table.at("in") << endl;
     table.at("in") = "India2";

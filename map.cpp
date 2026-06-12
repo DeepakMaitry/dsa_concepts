@@ -140,6 +140,22 @@ int main()
         cout << "map is not empty" << endl;
     }
 
+    // table.clear();
+    cout << table.size() << endl;
+    cout << table.at("in") << endl;
+    table.at("in") = "India2";
+    cout << table.at("in") << endl;
+    table["in"] = "India3";
+    cout << table["in"] << endl;
+
+    unordered_map<string, string>::iterator it = table.begin();
+    while (it != table.end())
+    {
+        pair<string, string> p = *it;
+        cout << p.first << " " << p.second << endl;
+        it++;
+    }
+
 
     /*// creation
 

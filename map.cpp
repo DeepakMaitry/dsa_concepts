@@ -105,7 +105,11 @@ using namespace std;
 int main()
 {
 
+    // unordered_map<string, string> table;
     unordered_map<string, string> table;
+    table.insert(make_pair("in", "India"));
+    cout << table.at("in") << endl;
+
     // table["in"] = "India";
     table.insert(make_pair("in", "India"));
 
@@ -201,6 +205,9 @@ int main()
     //     cout << p.first << " " << p.second << endl;
     //     it++;
     // }
+    // learning more about map
+    // some basic map 
+
 
     return 0;
 }
